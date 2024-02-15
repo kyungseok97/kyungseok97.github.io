@@ -53,8 +53,8 @@
 	<div class="container2">
 		<div class="centered">
 		<p>1. We propose a speaker encoder and an emotion encoder based on 
-		   domain codes with style normalization and <br>   restitution (SNR) block. </p>
-		<p></p>2. We generate multi-speaker multi-emotion utterances by sequentially 
+		   domain codes with style normalization and restitution (SNR) block. </p>
+		<p>2. We generate multi-speaker multi-emotion utterances by sequentially 
 		   injecting the two style features in the &emsp;decoder. </p>
 		3. We propose an automated data sampler based on deep learning.
 		</div>
@@ -64,35 +64,38 @@
 	</p>
 
 	  
-    <h3 class="sample"><br /><br />Comparison According to Size of Adaptation Data</h3>
+    <h3 class="sample"><br /><br />Emotional Voice Conversion</h3>
     <div class="container-sample1">
       <div class="centered-sample1">
-        <p class="sample1">Text: The style guide has been amended accordingly.</p>
+        <p class="sample1">Neutral to Neutral Emotional Voice Conversion</p>
         <table>
           <thead>
             <tr>
               <th> </th>
-              <th>Grond Truth</th>
-              <th>Full Data</th>
-              <th>20min</th>
-              <th>10min</th>
+              <th>Source</th>
+              <th>Target</th>
+              <th>StarGANv2-VC</th>
+              <th>Emo-StarGAN</th>
+	      <th>Ours</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>SE-ATTS(24spk)*</strong></td>
+              <td><strong>Sample 1*</strong></td>
               <td><audio controls="controls">  <source type="audio/wav" src="data/GT/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
               <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/full/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
               <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/20min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
               <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
-            </tr>
-            <tr>
-              <td><strong>SE-ATTS(24spk)</strong></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+	    </tr>
+	    <tr>
+              <td><strong>Sample 2*</strong></td>
               <td><audio controls="controls">  <source type="audio/wav" src="data/GT/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
-              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_B/full/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
-              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_B/20min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
-              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_B/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
-            </tr>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/full/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/20min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+	    </tr>
           </tbody>
         </table>
         <p class="grey">* w/o style eqaulizer.</p>
