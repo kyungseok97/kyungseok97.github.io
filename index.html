@@ -48,10 +48,41 @@
       </div>
     </div>
 
-    <h2 id="Audio-Samples"><br /><br />Audio Samples</h2>
-    <p id="Audio-Samples-detail"><br />All the audio sample use HiFi-GAN as a vocoder.</p>
 
-    <h3 class="sample"><br /><br />Comparison According to Size of Adaptation Data</h3>
 	  
+    <h3 class="sample"><br /><br />Comparison According to Size of Adaptation Data</h3>
+    <div class="container-sample1">
+      <div class="centered-sample1">
+        <p class="sample1">Text: The style guide has been amended accordingly.</p>
+        <table>
+          <thead>
+            <tr>
+              <th> </th>
+              <th>Grond Truth</th>
+              <th>Full Data</th>
+              <th>20min</th>
+              <th>10min</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SE-ATTS(24spk)*</strong></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/GT/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/full/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/20min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_A/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+            </tr>
+            <tr>
+              <td><strong>SE-ATTS(24spk)</strong></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/GT/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_B/full/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_B/20min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="data/few_sample/model_B/10min/spk136_F_0103.wav" />&lt;/source&gt; </audio></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="grey">* w/o style eqaulizer.</p>
+      </div>
+    </div>
   </body>
 </html>
